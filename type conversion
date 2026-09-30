@@ -1,0 +1,19 @@
+def main():
+    width = input("Enter the width : ")
+    height = input("Enter the height: ")
+    
+    try:
+        width = float(width)
+        height = float(height)
+        
+        area = width * height 
+        perimeter = 2 * (width + height)
+        
+        print(f"Area: {area}")
+        print(f"Perimeter: {perimeter}")
+        
+    except ValueError: 
+        print("Invalid input! Please enter numerical values.")
+
+if __name__ == "__main__":
+    main()
